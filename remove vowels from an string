@@ -1,0 +1,11 @@
+let str = "hello world";
+
+let arr = ["a", "e", "i", "o", "u"];
+
+let strarr = str
+    .split("")
+    .filter((x) => {
+        return !arr.includes(x);
+    })
+    .join("");
+console.log(strarr);
